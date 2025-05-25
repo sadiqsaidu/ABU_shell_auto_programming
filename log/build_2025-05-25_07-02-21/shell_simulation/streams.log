@@ -1,0 +1,43 @@
+[5.212s] Invoking command in '/home/sadiq/auto_ws/src/shell_simulation': PYTHONPATH=/home/sadiq/auto_ws/build/shell_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shell_simulation build --build-base /home/sadiq/auto_ws/build/shell_simulation/build install --record /home/sadiq/auto_ws/build/shell_simulation/install.log --single-version-externally-managed install_data
+[6.598s] running egg_info
+[6.600s] creating ../../build/shell_simulation/shell_simulation.egg-info
+[6.601s] writing ../../build/shell_simulation/shell_simulation.egg-info/PKG-INFO
+[6.601s] writing dependency_links to ../../build/shell_simulation/shell_simulation.egg-info/dependency_links.txt
+[6.602s] writing entry points to ../../build/shell_simulation/shell_simulation.egg-info/entry_points.txt
+[6.602s] writing requirements to ../../build/shell_simulation/shell_simulation.egg-info/requires.txt
+[6.602s] writing top-level names to ../../build/shell_simulation/shell_simulation.egg-info/top_level.txt
+[6.603s] writing manifest file '../../build/shell_simulation/shell_simulation.egg-info/SOURCES.txt'
+[6.609s] reading manifest file '../../build/shell_simulation/shell_simulation.egg-info/SOURCES.txt'
+[6.612s] writing manifest file '../../build/shell_simulation/shell_simulation.egg-info/SOURCES.txt'
+[6.615s] running build
+[6.616s] running build_py
+[6.617s] creating /home/sadiq/auto_ws/build/shell_simulation/build
+[6.617s] creating /home/sadiq/auto_ws/build/shell_simulation/build/lib
+[6.618s] creating /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation
+[6.618s] copying shell_simulation/perception_node.py -> /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation
+[6.619s] copying shell_simulation/control_node.py -> /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation
+[6.619s] copying shell_simulation/__init__.py -> /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation
+[6.619s] copying shell_simulation/planning_node.py -> /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation
+[6.620s] running install
+[6.621s] running install_lib
+[6.621s] creating /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation
+[6.622s] copying /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation/perception_node.py -> /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation
+[6.622s] copying /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation/control_node.py -> /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation
+[6.623s] copying /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation/__init__.py -> /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation
+[6.623s] copying /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation/planning_node.py -> /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation
+[6.629s] byte-compiling /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation/perception_node.py to perception_node.cpython-310.pyc
+[6.633s] byte-compiling /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation/control_node.py to control_node.cpython-310.pyc
+[6.639s] byte-compiling /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation/__init__.py to __init__.cpython-310.pyc
+[6.642s] byte-compiling /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation/planning_node.py to planning_node.cpython-310.pyc
+[6.643s] running install_data
+[6.644s] creating /home/sadiq/auto_ws/install/shell_simulation/share/ament_index
+[6.644s] creating /home/sadiq/auto_ws/install/shell_simulation/share/ament_index/resource_index
+[6.645s] creating /home/sadiq/auto_ws/install/shell_simulation/share/ament_index/resource_index/packages
+[6.649s] copying resource/shell_simulation -> /home/sadiq/auto_ws/install/shell_simulation/share/ament_index/resource_index/packages
+[6.649s] copying package.xml -> /home/sadiq/auto_ws/install/shell_simulation/share/shell_simulation
+[6.649s] running install_egg_info
+[6.653s] Copying ../../build/shell_simulation/shell_simulation.egg-info to /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation-0.0.0-py3.10.egg-info
+[6.699s] running install_scripts
+[6.790s] Installing perception_node = shell_simulation.perception_node:mainplanning_node = shell_simulation.planning_node:maincontrol_node script to /home/sadiq/auto_ws/install/shell_simulation/lib/shell_simulation
+[6.794s] writing list of installed files to '/home/sadiq/auto_ws/build/shell_simulation/install.log'
+[6.893s] Invoked command in '/home/sadiq/auto_ws/src/shell_simulation' returned '0': PYTHONPATH=/home/sadiq/auto_ws/build/shell_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shell_simulation build --build-base /home/sadiq/auto_ws/build/shell_simulation/build install --record /home/sadiq/auto_ws/build/shell_simulation/install.log --single-version-externally-managed install_data

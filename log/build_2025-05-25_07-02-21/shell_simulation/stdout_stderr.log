@@ -1,0 +1,41 @@
+running egg_info
+creating ../../build/shell_simulation/shell_simulation.egg-info
+writing ../../build/shell_simulation/shell_simulation.egg-info/PKG-INFO
+writing dependency_links to ../../build/shell_simulation/shell_simulation.egg-info/dependency_links.txt
+writing entry points to ../../build/shell_simulation/shell_simulation.egg-info/entry_points.txt
+writing requirements to ../../build/shell_simulation/shell_simulation.egg-info/requires.txt
+writing top-level names to ../../build/shell_simulation/shell_simulation.egg-info/top_level.txt
+writing manifest file '../../build/shell_simulation/shell_simulation.egg-info/SOURCES.txt'
+reading manifest file '../../build/shell_simulation/shell_simulation.egg-info/SOURCES.txt'
+writing manifest file '../../build/shell_simulation/shell_simulation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sadiq/auto_ws/build/shell_simulation/build
+creating /home/sadiq/auto_ws/build/shell_simulation/build/lib
+creating /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation
+copying shell_simulation/perception_node.py -> /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation
+copying shell_simulation/control_node.py -> /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation
+copying shell_simulation/__init__.py -> /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation
+copying shell_simulation/planning_node.py -> /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation
+running install
+running install_lib
+creating /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation
+copying /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation/perception_node.py -> /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation
+copying /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation/control_node.py -> /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation
+copying /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation/__init__.py -> /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation
+copying /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation/planning_node.py -> /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation
+byte-compiling /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation/perception_node.py to perception_node.cpython-310.pyc
+byte-compiling /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation/control_node.py to control_node.cpython-310.pyc
+byte-compiling /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation/planning_node.py to planning_node.cpython-310.pyc
+running install_data
+creating /home/sadiq/auto_ws/install/shell_simulation/share/ament_index
+creating /home/sadiq/auto_ws/install/shell_simulation/share/ament_index/resource_index
+creating /home/sadiq/auto_ws/install/shell_simulation/share/ament_index/resource_index/packages
+copying resource/shell_simulation -> /home/sadiq/auto_ws/install/shell_simulation/share/ament_index/resource_index/packages
+copying package.xml -> /home/sadiq/auto_ws/install/shell_simulation/share/shell_simulation
+running install_egg_info
+Copying ../../build/shell_simulation/shell_simulation.egg-info to /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation-0.0.0-py3.10.egg-info
+running install_scripts
+Installing perception_node = shell_simulation.perception_node:mainplanning_node = shell_simulation.planning_node:maincontrol_node script to /home/sadiq/auto_ws/install/shell_simulation/lib/shell_simulation
+writing list of installed files to '/home/sadiq/auto_ws/build/shell_simulation/install.log'
