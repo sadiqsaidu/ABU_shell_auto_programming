@@ -58,15 +58,11 @@ class PlanningNode(Node):
             target_point_msg.header.frame_id = self.target_frame_id 
             target_point_msg.point = self.waypoints[self.current_waypoint_index]
             self.target_waypoint_publisher.publish(target_point_msg)
-            # self.get_logger().info(f"Publishing waypoint {self.current_waypoint_index}: {target_point_msg.point.x:.2f}, {target_point_msg.point.y:.2f}")
+            self.get_logger().info(f"Publishing waypoint {self.current_waypoint_index}: {target_point_msg.point.x:.2f}, {target_point_msg.point.y:.2f}")
         else:
             if not self.all_waypoints_reached:
                 self.get_logger().info("All waypoints reached!")
                 self.all_waypoints_reached = True
-            # Optionally, publish a "dummy" far-away point or stop publishing
-            # For now, it will keep publishing the last point if all are reached.
-            # Consider what behavior is desired once all goals are passed.
-            # The competition might end the run automatically.
 
     def odom_callback(self, msg):
         if self.all_waypoints_reached:
