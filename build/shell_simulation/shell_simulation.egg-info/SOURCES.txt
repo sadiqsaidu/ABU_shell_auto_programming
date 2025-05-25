@@ -8,6 +8,7 @@ setup.py
 ../../build/shell_simulation/shell_simulation.egg-info/requires.txt
 ../../build/shell_simulation/shell_simulation.egg-info/top_level.txt
 ../../build/shell_simulation/shell_simulation.egg-info/zip-safe
+launch/shell_simulation.launch.py
 resource/shell_simulation
 shell_simulation/__init__.py
 shell_simulation/control_node.py

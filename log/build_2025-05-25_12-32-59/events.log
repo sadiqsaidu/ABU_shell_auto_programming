@@ -1,0 +1,80 @@
+[0.000000] (-) TimerEvent: {}
+[0.001438] (shell_simulation) JobQueued: {'identifier': 'shell_simulation', 'dependencies': OrderedDict()}
+[0.003033] (shell_simulation) JobStarted: {'identifier': 'shell_simulation'}
+[0.099266] (-) TimerEvent: {}
+[0.199852] (-) TimerEvent: {}
+[0.300625] (-) TimerEvent: {}
+[0.403871] (-) TimerEvent: {}
+[0.504931] (-) TimerEvent: {}
+[0.605515] (-) TimerEvent: {}
+[0.706101] (-) TimerEvent: {}
+[0.806634] (-) TimerEvent: {}
+[0.907256] (-) TimerEvent: {}
+[1.007852] (-) TimerEvent: {}
+[1.108936] (-) TimerEvent: {}
+[1.209614] (-) TimerEvent: {}
+[1.310824] (-) TimerEvent: {}
+[1.411405] (-) TimerEvent: {}
+[1.514906] (-) TimerEvent: {}
+[1.615439] (-) TimerEvent: {}
+[1.716099] (-) TimerEvent: {}
+[1.817524] (-) TimerEvent: {}
+[1.919155] (-) TimerEvent: {}
+[2.019786] (-) TimerEvent: {}
+[2.121030] (-) TimerEvent: {}
+[2.221577] (-) TimerEvent: {}
+[2.322558] (-) TimerEvent: {}
+[2.423076] (-) TimerEvent: {}
+[2.523640] (-) TimerEvent: {}
+[2.624483] (-) TimerEvent: {}
+[2.725343] (-) TimerEvent: {}
+[2.826415] (-) TimerEvent: {}
+[2.927254] (-) TimerEvent: {}
+[3.028042] (-) TimerEvent: {}
+[3.128945] (-) TimerEvent: {}
+[3.230415] (-) TimerEvent: {}
+[3.331244] (-) TimerEvent: {}
+[3.380353] (shell_simulation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/shell_simulation', 'build', '--build-base', '/home/sadiq/auto_ws/build/shell_simulation/build', 'install', '--record', '/home/sadiq/auto_ws/build/shell_simulation/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sadiq/auto_ws/src/shell_simulation', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sadiq', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/sadiq', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/sadiq/auto_ws/src/shell_simulation/shell_simulation', 'TERM_PROGRAM_VERSION': '1.100.2', 'DESKTOP_SESSION': 'pop', 'NVM_BIN': '/home/sadiq/.nvm/versions/node/v22.13.0/bin', 'NVM_INC': '/home/sadiq/.nvm/versions/node/v22.13.0/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'pop', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '6333', 'BUNDLED_DEBUGPY_PATH': '/home/sadiq/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'NVM_DIR': '/home/sadiq/.nvm', 'COLCON_PREFIX_PATH': '/home/sadiq/auto_ws/install:/home/sadiq/test_ws/install:/home/sadiq/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'sadiq', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sadiq', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/sadiq/.nvm/versions/node/v22.13.0/bin:/home/sadiq/.local/share/solana/install/active_release/bin:/home/sadiq/.cargo/bin:/home/sadiq/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sadiq/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/sadiq/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/pop-os:@/tmp/.ICE-unix/2470,unix/pop-os:/tmp/.ICE-unix/2470', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/eda4daf9_07ab_4dc7_9b1c_891d3a5ead0a', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/sadiq/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-b99d735c3d2c052b.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'pop', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-608c837145.sock', 'GNOME_TERMINAL_SERVICE': ':1.119', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/sadiq/auto_ws/install/shell_simulation:/home/sadiq/test_ws/install/my_py_pkg:/home/sadiq/ros2_ws/install/my_py_pkg:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'pop:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'pop', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sadiq/auto_ws/build/shell_simulation', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-pop:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/pop:/usr/share/gnome:/home/sadiq/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sadiq/auto_ws/build/shell_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages:/home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages:/home/sadiq/test_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/sadiq/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.431414] (-) TimerEvent: {}
+[3.531977] (-) TimerEvent: {}
+[3.632493] (-) TimerEvent: {}
+[3.733037] (-) TimerEvent: {}
+[3.833566] (-) TimerEvent: {}
+[3.934104] (-) TimerEvent: {}
+[4.034573] (-) TimerEvent: {}
+[4.110858] (shell_simulation) StdoutLine: {'line': b'running egg_info\n'}
+[4.112574] (shell_simulation) StdoutLine: {'line': b'writing ../../build/shell_simulation/shell_simulation.egg-info/PKG-INFO\n'}
+[4.113027] (shell_simulation) StdoutLine: {'line': b'writing dependency_links to ../../build/shell_simulation/shell_simulation.egg-info/dependency_links.txt\n'}
+[4.113537] (shell_simulation) StdoutLine: {'line': b'writing entry points to ../../build/shell_simulation/shell_simulation.egg-info/entry_points.txt\n'}
+[4.113990] (shell_simulation) StdoutLine: {'line': b'writing requirements to ../../build/shell_simulation/shell_simulation.egg-info/requires.txt\n'}
+[4.114327] (shell_simulation) StdoutLine: {'line': b'writing top-level names to ../../build/shell_simulation/shell_simulation.egg-info/top_level.txt\n'}
+[4.118124] (shell_simulation) StdoutLine: {'line': b"reading manifest file '../../build/shell_simulation/shell_simulation.egg-info/SOURCES.txt'\n"}
+[4.134973] (-) TimerEvent: {}
+[4.174851] (shell_simulation) StdoutLine: {'line': b"writing manifest file '../../build/shell_simulation/shell_simulation.egg-info/SOURCES.txt'\n"}
+[4.175458] (shell_simulation) StdoutLine: {'line': b'running build\n'}
+[4.175755] (shell_simulation) StdoutLine: {'line': b'running build_py\n'}
+[4.176398] (shell_simulation) StdoutLine: {'line': b'copying shell_simulation/perception_node.py -> /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation\n'}
+[4.176685] (shell_simulation) StdoutLine: {'line': b'copying shell_simulation/control_node.py -> /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation\n'}
+[4.177272] (shell_simulation) StdoutLine: {'line': b'running install\n'}
+[4.178161] (shell_simulation) StdoutLine: {'line': b'running install_lib\n'}
+[4.179946] (shell_simulation) StdoutLine: {'line': b'copying /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation/perception_node.py -> /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation\n'}
+[4.180371] (shell_simulation) StdoutLine: {'line': b'copying /home/sadiq/auto_ws/build/shell_simulation/build/lib/shell_simulation/control_node.py -> /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation\n'}
+[4.184766] (shell_simulation) StdoutLine: {'line': b'byte-compiling /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation/perception_node.py to perception_node.cpython-310.pyc\n'}
+[4.187563] (shell_simulation) StdoutLine: {'line': b'byte-compiling /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation/control_node.py to control_node.cpython-310.pyc\n'}
+[4.191140] (shell_simulation) StdoutLine: {'line': b'running install_data\n'}
+[4.191721] (shell_simulation) StdoutLine: {'line': b'creating /home/sadiq/auto_ws/install/shell_simulation/share/shell_simulation/launch\n'}
+[4.192179] (shell_simulation) StdoutLine: {'line': b'copying launch/shell_simulation.launch.py -> /home/sadiq/auto_ws/install/shell_simulation/share/shell_simulation/launch\n'}
+[4.192586] (shell_simulation) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.197281] (shell_simulation) StdoutLine: {'line': b"removing '/home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.198159] (shell_simulation) StdoutLine: {'line': b'Copying ../../build/shell_simulation/shell_simulation.egg-info to /home/sadiq/auto_ws/install/shell_simulation/lib/python3.10/site-packages/shell_simulation-0.0.0-py3.10.egg-info\n'}
+[4.235289] (-) TimerEvent: {}
+[4.238287] (shell_simulation) StdoutLine: {'line': b'running install_scripts\n'}
+[4.293355] (shell_simulation) StdoutLine: {'line': b'Installing perception_node = shell_simulation.perception_node:mainplanning_node = shell_simulation.planning_node:maincontrol_node script to /home/sadiq/auto_ws/install/shell_simulation/lib/shell_simulation\n'}
+[4.294586] (shell_simulation) StdoutLine: {'line': b"writing list of installed files to '/home/sadiq/auto_ws/build/shell_simulation/install.log'\n"}
+[4.335428] (-) TimerEvent: {}
+[4.349817] (shell_simulation) CommandEnded: {'returncode': 0}
+[4.435871] (-) TimerEvent: {}
+[4.537160] (-) TimerEvent: {}
+[4.639418] (-) TimerEvent: {}
+[4.643537] (shell_simulation) JobEnded: {'identifier': 'shell_simulation', 'rc': 0}
+[4.648414] (-) EventReactorShutdown: {}

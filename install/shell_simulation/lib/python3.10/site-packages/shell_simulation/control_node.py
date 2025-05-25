@@ -8,13 +8,13 @@ from std_msgs.msg import String as RosString
 from std_msgs.msg import Bool as RosBool
 from geometry_msgs.msg import PointStamped
 import math
-import tf_transformations # sudo apt-get install ros-humble-tf-transformations
+import tf_transformations 
 
 class ControlNode(Node):
     def __init__(self):
         super().__init__('control_node')
 
-        # Parameters (tune these!)
+        # Parameters 
         self.declare_parameter('kp_steer', 0.8) 
         self.declare_parameter('kp_throttle', 0.3)
         self.declare_parameter('target_speed_mps', 8.0)  # m/s (e.g., ~18 mph)
@@ -74,6 +74,7 @@ class ControlNode(Node):
         self.current_odometry = msg
 
     def speed_callback(self, msg):
+        # confirm this parameter whether its m/s or km/h
         self.current_speed_mps = msg.data # Assuming this is in m/s from CARLA
 
     def target_waypoint_callback(self, msg):
@@ -87,8 +88,6 @@ class ControlNode(Node):
     def control_loop(self):
         if not self.initial_commands_sent:
             self.send_initial_commands()
-            # Return early on the first few cycles to ensure CARLA has processed initial commands
-            # and we have received some sensor data.
             if not self.current_odometry or self.target_waypoint is None:
                  self.get_logger().info("Waiting for odometry and first target waypoint...")
                  # Publish zero commands to be safe
@@ -106,8 +105,6 @@ class ControlNode(Node):
             return
 
         if self.current_odometry is None or self.target_waypoint is None:
-            # self.get_logger().info("Waiting for odometry or target waypoint...")
-            # Publish zero commands to be safe if state is unknown after initial wait
             self.throttle_pub.publish(RosFloat64(data=0.0))
             self.steer_pub.publish(RosFloat64(data=0.0))
             self.brake_pub.publish(RosFloat64(data=0.0))
@@ -146,12 +143,9 @@ class ControlNode(Node):
 
         # Speed limit enforcement
         if self.current_speed_mps > self.speed_limit_mps:
-            # self.get_logger().warn(f"Speed limit ({self.speed_limit_mps:.1f}m/s) exceeded: {self.current_speed_mps:.1f}m/s. Applying brakes.")
             throttle_cmd_val = 0.0
             brake_cmd_val = 0.5 # Moderate braking for speed limit
         elif distance_to_target < self.waypoint_brake_distance:
-            # self.get_logger().info(f"Approaching waypoint (dist: {distance_to_target:.1f}m). Reducing speed.")
-            # Gentle braking as we approach the waypoint, proportional to how close we are
             brake_cmd_val = 0.2 + 0.8 * (1.0 - (distance_to_target / self.waypoint_brake_distance))
             brake_cmd_val = max(0.0, min(1.0, brake_cmd_val))
             throttle_cmd_val = 0.1 # Crawl speed
@@ -159,12 +153,11 @@ class ControlNode(Node):
                  throttle_cmd_val = 0.0
                  brake_cmd_val = 0.8
         else:
-            # P-controller for speed, only if reasonably aligned (e.g. heading_error is small)
             if abs(heading_error) < math.radians(30): # Only apply throttle if somewhat aligned
                 speed_error = self.target_speed_mps - self.current_speed_mps
                 throttle_cmd_val = self.kp_throttle * speed_error
-            else: # If not aligned, focus on steering, reduce throttle
-                throttle_cmd_val = 0.1 # Low throttle while turning significantly
+            else: 
+                throttle_cmd_val = 0.1 
             
         throttle_cmd_val = max(0.0, min(1.0, throttle_cmd_val)) # Clamp throttle
         brake_cmd_val = max(0.0, min(1.0, brake_cmd_val)) # Clamp brake
@@ -182,9 +175,8 @@ def main(args=None):
     except KeyboardInterrupt:
         pass
     finally:
-        # Cleanly shut down brake/throttle
         control_node.throttle_pub.publish(RosFloat64(data=0.0))
-        control_node.brake_pub.publish(RosFloat64(data=1.0)) # Apply brake on exit
+        control_node.brake_pub.publish(RosFloat64(data=1.0)) 
         control_node.get_logger().info("Control node shutting down, applying brakes.")
         control_node.destroy_node()
         rclpy.shutdown()
