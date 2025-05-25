@@ -21,9 +21,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'perception_node = shell_simulation.perception_node:main'
-            'planning_node = shell_simulation.planning_node:main'
-            'control_node = shell_simulation.control_node:main'
+            'perception_node = shell_simulation.perception_node:main',
+            'planning_node = shell_simulation.planning_node:main',
+            'control_node = shell_simulation.control_node:main',
         ],
     },
 )
