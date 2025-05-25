@@ -1,0 +1,20 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/mkbardi/ABU_shell_auto_programming/install/shell_simulation/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "/home/mkbardi/carla_simulator/PythonAPI/carla/dist/carla-0.9.15-py3.7-linux-x86_64.egg",
+        "/home/mkbardi/carla_simulator/PythonAPI/carla/dist/carla-*.egg",
+        "/home/mkbardi/CARLA_0.9.14/PythonAPI/carla/dist/carla-0.9.14-py3.7-linux-x86_64.egg",
+        "/home/mkbardi/carla_simulator/PythonAPI/carla/dist/carla-0.9.15-cp37-cp37m-manylinux_2_27_x86_64.egg"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/mkbardi/ABU_shell_auto_programming/install/shell_simulation/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "/home/mkbardi/carla_simulator/PythonAPI/carla/dist/carla-0.9.15-py3.7-linux-x86_64.egg",
+        "/home/mkbardi/carla_simulator/PythonAPI/carla/dist/carla-*.egg",
+        "/home/mkbardi/CARLA_0.9.14/PythonAPI/carla/dist/carla-0.9.14-py3.7-linux-x86_64.egg",
+        "/home/mkbardi/carla_simulator/PythonAPI/carla/dist/carla-0.9.15-cp37-cp37m-manylinux_2_27_x86_64.egg"
+    ]
+}
