@@ -75,7 +75,7 @@ Refinements in the planning, control, and perception aspects of this project can
 
 ## License
 
-[Specify license information here.]
+##
 
 ## Acknowledgments
 
