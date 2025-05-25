@@ -26,22 +26,18 @@ class PerceptionNode(Node):
 
         self.bridge = CvBridge()
 
-        # Subscription to Depth Camera
         self.depth_subscription = self.create_subscription(
             Image,
             '/carla/ego_vehicle/depth_middle/image',
             self.depth_callback,
             10)
         
-        # Publisher for Obstacle Alert
         self.obstacle_alert_publisher = self.create_publisher(Bool, '/obstacle_alert', 10)
         
         self.get_logger().info(f"Perception Node started. Obstacle threshold: {self.obstacle_threshold}m")
 
     def depth_callback(self, msg):
         try:
-            # CARLA depth images are typically 32FC1 (float32, 1 channel)
-            # The values are in meters.
             cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='32FC1')
         except Exception as e:
             self.get_logger().error(f'Failed to convert depth image: {e}')
@@ -49,13 +45,11 @@ class PerceptionNode(Node):
 
         height, width = cv_image.shape
 
-        # Define ROI (Region of Interest) in the center
         roi_x_start = int(width * self.roi_x_start_ratio)
         roi_x_end = int(width * self.roi_x_end_ratio)
         roi_y_start = int(height * self.roi_y_start_ratio)
         roi_y_end = int(height * self.roi_y_end_ratio)
         
-        # Ensure ROI coordinates are valid
         roi_x_start = max(0, roi_x_start)
         roi_x_end = min(width, roi_x_end)
         roi_y_start = max(0, roi_y_start)
@@ -64,7 +58,7 @@ class PerceptionNode(Node):
         if roi_x_start >= roi_x_end or roi_y_start >= roi_y_end:
             self.get_logger().warn("Invalid ROI dimensions, check ratios.")
             obstacle_detected_msg = Bool()
-            obstacle_detected_msg.data = False # Default to no obstacle if ROI is invalid
+            obstacle_detected_msg.data = False 
             self.obstacle_alert_publisher.publish(obstacle_detected_msg)
             return
 
@@ -73,12 +67,11 @@ class PerceptionNode(Node):
         if roi.size == 0:
             self.get_logger().warn("ROI is empty.")
             obstacle_detected_msg = Bool()
-            obstacle_detected_msg.data = False # Default to no obstacle if ROI is empty
+            obstacle_detected_msg.data = False 
             self.obstacle_alert_publisher.publish(obstacle_detected_msg)
             return
             
-        # Calculate average depth in ROI, ignoring inf values
-        valid_depths = roi[np.isfinite(roi) & (roi > 0)] # Consider only valid positive depth values
+        valid_depths = roi[np.isfinite(roi) & (roi > 0)] 
         
         obstacle_detected = False
         if valid_depths.size > 0:

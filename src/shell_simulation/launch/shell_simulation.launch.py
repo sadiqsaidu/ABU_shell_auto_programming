@@ -4,9 +4,9 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         Node(
-            package='shell_simulation', # Your package name
-            executable='perception_node', # The entry point in setup.py
-            name='perception_node_instance', # ROS Name for this specific node instance
+            package='shell_simulation', 
+            executable='perception_node', 
+            name='perception_node_instance', 
             output='screen'
         ),
         Node(
